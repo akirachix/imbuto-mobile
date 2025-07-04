@@ -1,4 +1,4 @@
-package com.Imbuto.imbutohub
+package com.imbuto.imbutohubmobile
 
 import org.junit.Test
 
