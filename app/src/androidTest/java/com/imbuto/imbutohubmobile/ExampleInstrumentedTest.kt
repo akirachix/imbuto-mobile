@@ -1,4 +1,4 @@
-package com.Imbuto.imbutohub
+package com.imbuto.imbutohubmobile
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.Imbuto.imbutohub", appContext.packageName)
+        assertEquals("com.imbuto.imbutohubmobile", appContext.packageName)
     }
 }

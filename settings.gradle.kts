@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ImbutoHub"
+rootProject.name = "ImbutoHubMobile"
 include(":app")
- 
