@@ -18,7 +18,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ImbutoHubTheme {
-//                ImbutoApp()
                 val navController = rememberNavController()
                 AppNavigation(navController = navController)
 
@@ -26,20 +25,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-//    @Composable
-//    fun Greeting(name: String, modifier: Modifier = Modifier) {
-//        Text(
-//            text = "Hello $name!",
-//            modifier = modifier
-//        )
-//    }
-//
-//    @Preview(showBackground = true)
-//    @Composable
-//    fun GreetingPreview() {
-//        ImbutoHubTheme {
-//            Greeting("Android")
-//        }
-//    }
-//}
