@@ -15,8 +15,3 @@
 local.properties
 /.idea
 *.log
-**/build/
-gradle/
-.gradle/
-local.properties/
-*.apk
