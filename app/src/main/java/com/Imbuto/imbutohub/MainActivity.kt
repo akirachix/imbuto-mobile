@@ -1,41 +1,27 @@
 package com.Imbuto.imbutohub
 
-
-
+import AppNavigation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
+import com.Imbuto.imbutohub.ui.theme.ImbutoHubTheme
 
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContent {
-            MaterialTheme {
-                Surface(color = MaterialTheme.colorScheme.background) {
-                    AppNavHost()
-                }
+            ImbutoHubTheme {
+                val navController = rememberNavController()
+                AppNavigation(navController = navController)
+
             }
         }
-    }
-}
-
-@androidx.compose.runtime.Composable
-fun AppNavHost() {
-    val navController = rememberNavController()
-
-    NavHost(navController = navController, startDestination = "signup") {
-        composable("signup") {
-            SignupScreen(navController)
-        }
-        composable("login") {
-            LoginScreen(navController)
-        }
-
     }
 }
